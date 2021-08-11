@@ -4,8 +4,8 @@ let https = require("https");
 let fs = require("fs");
 // Configuare https
 const httpsOption = {
-    key : fs.readFileSync("./https/lovedeeply.xyz.key"),
-    cert: fs.readFileSync("./https/lovedeeply.xyz.pem")
+    key : fs.readFileSync("./lovedeeply.xyz.key"),
+    cert: fs.readFileSync("./lovedeeply.xyz.pem")
 }
 // Create service
 let app = express();
