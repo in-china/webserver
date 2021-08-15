@@ -9,5 +9,9 @@ const httpsOption = {
 }
 // Create service
 let app = express();
+app.use(serveIndex('./public'));
+app.use(express.static('./public'));
+
+
 http.createServer(app).listen(8080);
 https.createServer(httpsOption, app).listen(3000);
