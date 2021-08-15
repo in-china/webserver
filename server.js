@@ -9,5 +9,5 @@ const httpsOption = {
 }
 // Create service
 let app = express();
-http.createServer(app).listen(80);
-https.createServer(httpsOption, app).listen(443);
+http.createServer(app).listen(8080);
+https.createServer(httpsOption, app).listen(3000);
